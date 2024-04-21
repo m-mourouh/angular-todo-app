@@ -1,0 +1,9 @@
+.list-item {
+  & > label {
+    cursor: pointer !important;
+  }
+
+  .btn-close {
+    font-size: 0.6rem;
+  }
+}

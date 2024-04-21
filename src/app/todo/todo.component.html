@@ -1,0 +1,5 @@
+<div class="container todo-wrapper">
+  <todo-form (addItem)="addNewTodo($event)"></todo-form>
+  <todo-filter [(filter)]="filter"></todo-filter>
+  <todo-list [items]="items.filter(this.filter)"></todo-list>
+</div>

@@ -1,0 +1,33 @@
+<div *ngIf="items.length === 0; else showItems" class="row">
+    <span class="alert alert-info">There are no items to display</span>
+  </div>
+
+  <ng-template #showItems>
+    <ul class="items-list row p-0">
+      <todo-item *ngFor="let item of items; index as idx" [itemIndex]="idx"  [todo]="item" class="p-0"></todo-item>
+      <!-- <li *ngFor="let item of items; index as ii" class="list-item mb-2 card">
+        <label class="card-body row" [htmlFor]="'item-' + ii">
+          <div class="col-10">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              [id]="'item-' + ii"
+              [checked]="item.isComplete"
+              [attr.data-index]="ii"
+              (click)="toggleItem(item)"
+            />
+            <span class="ms-2 fw-semibold">{{ item.itemText }}</span>
+          </div>
+          <small
+            *ngIf="item.isComplete"
+            class="text-center px-2 py-1 fw-semibold bg-success-subtle border border-success-subtle rounded-2 col-2"
+            >Completed</small>
+          <small
+            *ngIf="!item.isComplete"
+            class="text-center px-2 py-1 fw-semibold bg-warning-subtle border border-warning-subtle rounded-2 col-2"
+            >Pending</small
+          >
+        </label>
+      </li> -->
+    </ul>
+  </ng-template>

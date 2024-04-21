@@ -1,0 +1,28 @@
+[
+   {
+      "id":1,
+      "todo":"Learn Spring Boot",
+      "completed":true
+   },
+   {
+      "id":2,
+      "todo":"Learn Angular",
+      "completed":false
+   },
+   {
+      "id":3,
+      "todo":"Learn Java",
+      "completed":false
+   },
+   {
+      "id":4,
+      "todo":"Learn Spring Framework",
+      "completed":false
+   },
+   {
+      "id":5,
+      "todo":"Learn Spring Boot",
+      "completed":false
+   }
+]
+
